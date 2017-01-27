@@ -29,3 +29,12 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### My notes
+
+To use moment.js pipes for Angular 2.0 use [angular2-moment](https://github.com/urish/angular2-moment) 
+
+used: [amTimeAgo pipe](https://github.com/urish/angular2-moment#amtimeago-pipe) and [amFromUnix pipe](https://github.com/urish/angular2-moment#amfromunix-pipe)
+
+
+excellent article by [Houssein Djirdeh](https://houssein.me/angular2-hacker-news)
