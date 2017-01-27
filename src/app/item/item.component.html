@@ -1,6 +1,8 @@
 <div *ngIf="!item" class="loading-section">
   <!-- loading indicator -->
-  Loading story
+  <div class="loader">
+    Loading...
+  </div>
 </div>
 <div *ngIf="item">
   <div class="item-laptop">
@@ -8,7 +10,7 @@
       <a class="title" href="{{item.url}}">
         {{ item.title }}
       </a>
-      <span class="domain">{{ item.url }}</span>
+      <span class="domain">{{ item.url | domain }}</span>
     </p>
     <div class="subtext-laptop">
       {{ item.score }} points by 
