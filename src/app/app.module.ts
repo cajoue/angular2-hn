@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
 
 import { HackernewsApiService } from './hackernews-api.service';
+import { ItemCommentsComponent } from './item-comments/item-comments.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HackernewsApiService } from './hackernews-api.service';
     HeaderComponent,
     StoriesComponent,
     FooterComponent,
-    ItemComponent
+    ItemComponent,
+    ItemCommentsComponent
   ],
   imports: [
     BrowserModule,
