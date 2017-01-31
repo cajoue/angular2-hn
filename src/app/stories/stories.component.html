@@ -1,19 +1,20 @@
-<div class="loading-section" *ngIf="!items">
-  <!-- Loading bars that show when request is pending -->
-</div>
-
-<div *ngIf="items" class="main-content">
-  <ol class="list-margin">
-    <li *ngFor="let item of items" class="post">
-      <app-item class="item-block" [item]="item"></app-item>
-    </li>
-  </ol>
-  <div class="nav">
-    <a href="" class="prev">
-      < Prev
-    </a>
-    <a href="" class="more">
-      More >
-    </a>
+<div class="main-content">
+  <div class="loading-section" *ngIf="!items">
+    <!-- Loading bars that show when request is pending -->
+  </div>
+  <div *ngIf="items">
+    <ol class="list-margin" start="{{ listStart }}">
+      <li *ngFor="let item of items" class="post">
+        <app-item class="item-block" [item]="item"></app-item>
+      </li>
+    </ol>
+    <div class="nav">
+      <a *ngIf="listStart !== 1" [routerLink]="['/' + storiesType, pageNum - 1]" class="prev">
+        ‹ Prev
+      </a>
+      <a *ngIf="items.length === 30" [routerLink]="['/' + storiesType, pageNum + 1]" class="more">
+        More ›
+      </a>
+    </div>
   </div>
 </div>
