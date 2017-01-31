@@ -12,6 +12,8 @@ import { ItemComponent } from './item/item.component';
 import { HackernewsApiService } from './hackernews-api.service';
 import { ItemCommentsComponent } from './item-comments/item-comments.component';
 import { routing } from './app.routes';
+import { CommentTreeComponent } from './comment-tree/comment-tree.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { routing } from './app.routes';
     StoriesComponent,
     FooterComponent,
     ItemComponent,
-    ItemCommentsComponent
+    ItemCommentsComponent,
+    CommentTreeComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
