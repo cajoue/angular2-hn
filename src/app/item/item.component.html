@@ -1,6 +1,6 @@
 <div class="item-laptop">
   <p>
-    <a class="title" href="{{item.url}}">
+    <a class="title" href="{{item.url}}" target="_blank">
       {{ item.title }}
     </a>
     <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
@@ -29,7 +29,7 @@
   <!-- Markup that shows only on mobile (to give the app a
   responsive mobile feel). -->
   <p> 
-    <a class="title" href="">
+    <a class="title" href="{{item.url}}">
       {{item.title}}
     </a>
     <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
