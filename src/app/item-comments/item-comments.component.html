@@ -10,8 +10,8 @@
 
     <div class="laptop" [class.item-header]="item.comments_count > 0 || item.type === 'job'" [class.head-margin]="item.text">
       <p>
-        <a class="title" href= {{ item.url }}>
-          {{ item.title }}
+        <a class="title" href="{{item.url}}">
+          {{item.title}}
         </a>
         <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
       </p>
@@ -22,15 +22,14 @@
         </span>
         <span>
           {{item.time_ago}}
-          <span>
-            |
+          <span> | 
             <a [routerLink]="['/item', item.id]">
-              <span *ngIf="item.comments_count > 0">
+              <span *ngIf="item.comments_count !== 0">
                 {{item.comments_count}}
                 <span *ngIf="item.comments_count === 1">comment</span>
                 <span *ngIf="item.comments_count > 1">comments</span>
               </span>
-              <span *ngIf="item.comments_count === 0">discus</span>
+              <span *ngIf="item.comments_count === 0">discuss</span>
             </a>
           </span>
         </span>
