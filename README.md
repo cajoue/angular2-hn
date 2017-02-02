@@ -36,5 +36,9 @@ To use moment.js pipes for Angular 2.0 use [angular2-moment](https://github.com/
 
 used: [amTimeAgo pipe](https://github.com/urish/angular2-moment#amtimeago-pipe) and [amFromUnix pipe](https://github.com/urish/angular2-moment#amfromunix-pipe)
 
+#### Hacker News (unofficial) API
+[https://github.com/cheeaun/node-hnapi/](https://github.com/cheeaun/node-hnapi/)
+
+[Documentation](https://github.com/cheeaun/node-hnapi/wiki/API-Documentation)
 
 excellent article by [Houssein Djirdeh](https://houssein.me/angular2-hacker-news)
