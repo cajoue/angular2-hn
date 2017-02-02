@@ -14,6 +14,7 @@ import { ItemCommentsComponent } from './item-comments/item-comments.component';
 import { routing } from './app.routes';
 import { CommentTreeComponent } from './comment-tree/comment-tree.component';
 import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommentComponent } from './comment/comment.component';
     ItemComponent,
     ItemCommentsComponent,
     CommentTreeComponent,
-    CommentComponent
+    CommentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
