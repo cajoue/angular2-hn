@@ -1,3 +1,15 @@
-<p>
-  user works!
-</p>
+<div *ngIf="user" class="profile">
+  <div class="mobile item-header">
+    <p class="title-block">
+      Profile: {{ user.id }}
+    </p>
+  </div>
+  <div class="main-details">
+    <span class="name">{{ user.id }}</span>
+    <span class="right">{{ user.karma }} ★ </span>
+    <p class="age">Created {{ user.created }}</p>
+  </div>
+  <div class="other-details" *ngIf="user.about">
+    <p [innerHTML]="user.about"></p>
+  </div>
+</div>
